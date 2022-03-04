@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- APlayer CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"/>
+	<link rel="shortcut icon" type="image/png" href="./old-img/music.png">
+    <title>Old House</title>
+    <style>
+    	body{
+    		background-color: #f7f7f7;
+    		font-family: Open sans;
+    	}
+    	img{
+    		width: 100%;
+    		min-height: 250px;
+    	}
+    	.main{
+    		padding: 40px 0;
+    	}
+    	.col-md-3{
+    		margin-bottom: 40px;
+    	}
+    	.album-poster{
+    		position: relative;
+    		display: block;
+    		border-radius: 7px;
+    		overflow: hidden;
+    		box-shadow: 0 15px 35px #3d2173a1;
+    		transition: all ease 0.4s;
+    	}
+    	.album-poster:hover{
+    		box-shadow: none;
+    		transform: scale(0.98) translateY(5px);
+    	}
+    	h3{
+    		font-size: 34px;
+    		margin-bottom: 34px;
+    		border-bottom: 4px solid #e6e6e6;
+    		padding-bottom: 15px;
+    	}
+    	p{
+    		font-size: 15px;
+    	}
+    	h4{
+    		font-size: 16px;
+    		text-transform: uppercase;
+    		margin-top: 15px;
+    		font-weight: 700;
+    	}
+		
+
+		/*default is hide music player*/
+		#aplayer{
+			position: fixed;
+			bottom: -100%;
+			left: 0;
+			width: 100%;
+			margin: 0;
+			box-shadow: 0 -2px 2px #dadada;
+			background-color: #fff;
+			transition: all ease 0.5s;
+		}
+		#aplayer.showPlayer{
+			bottom: 0;
+		}
+
+		
+		/*MUSIC PLAYER CUSTOMIZING STYLE*/
+		span{
+			color: #000 !important;
+			font-size: 16px;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
+			background: #e0e0e0;
+    		height: 4px;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played{
+			height: 4px;
+			background-color: #2196F3 !important;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
+			background-color: #2196F3 !important;
+		}
+
+		.aplayer .aplayer-icon{
+			width: 20px;
+			height: 20px;
+		}
+		.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+		    fill: #000;
+		}
+		.aplayer .aplayer-info .aplayer-music{
+			margin-bottom: 5px;
+		}
+
+
+    </style>
+ 	</head>
+	<body>
+                              <!--====================================== OLD SINGERS CARDS START ================================================-->
+<div class="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>OLD SONGS</h3>
+			</div>
+
+			<!--=========== first card start ============-->
+			<div class="col-md-3">
+				<a href="javascript:void();" class="album-poster" data-switch="0">
+					<img src="./old-img/Nusrat_Fateh_Ali_Khan.jpg" alt="">
+				</a>
+				<h4> Kali Kali zulfon pa</h4>
+				<p>Nusrat Fateh Ali Khan - 2011</p>
+			</div>
+			<!--=========== first card end ============-->
+
+
+
+			<!--=========== second card start ============-->
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="1">
+					<img src="./old-img/mehdi-hassan-3.jpg" alt="">
+				</a>
+				<h4>Main Hosh Mein Tha</h4>
+				<p> Mehdi-Hassan - 2019</p>
+			</div>
+			<!--=========== second card end ============-->
+
+
+			<!--=========== third card start ============-->
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="2">
+					<img src="./old-img/Noor-Jahan.jpg" alt="">
+				</a>
+				<h4>Jo na mil Sake wohi bewafa</h4>
+				<p>Noor Jahan - 2019</p>
+			</div>
+            <!--=========== third card end ============-->
+
+
+            <!--=========== fourth card start ============-->
+            <div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="3">
+					<img src="./old-img/Amanat-Ali-Khan.jpg" alt="">
+				</a>
+				<h4>Insha Ji Utho Ab Kooch</h4>
+				<p>Amanat Ali Khan - 2018</p>
+			</div>
+
+            
+			             <!--=========== fourth card end ============-->
+
+
+            <!--=========== fifth card start ============-->
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="4">
+					<img src="./old-img/Jagjit-Singh.jpg" alt="">
+				</a>
+				<h4>Koi Fariyaad</h4>
+				<p>Jagjit-Singh - 2016</p>
+			</div>
+			<!--=========== fifth card end ============-->
+
+
+            <!--=========== sixth card start ============-->
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="5">
+					<img src="./old-img/M.Rafi.jpg" alt="">
+				</a>
+				<h4>Kaise Kategi Zindagi</h4>
+				<p>M.Rafi - 2021</p>
+			</div>
+			<!--=========== sixth card end ============-->
+
+
+            <!--=========== seventh card start ============-->
+			<div class="col-md-3">
+				<a href="#" class="album-poster" data-switch="6">
+					<img src="./old-img/Kishore-Kumar.jpg" alt="">
+				</a>
+				<h4>Mere naina sawan bhado</h4>
+				<p>Kishore-Kumar - 2021</p>
+			</div>
+            <!--=========== seventh card end ============-->
+
+            
+			<!--=========== eighth card start ============-->
+			<div class="col-md-3">
+				<a href="#" class="album-poster">
+					<img src="./old-img/munni-begam.jpg" alt="">
+				</a>
+				<h4>Idar Zingadi ka</h4>
+				<p>Munni Begam - 2018</p>
+			</div>
+			<!--=========== eighth card end ============-->
+
+
+			<!--=========== ninth card start ============-->
+			<div class="col-md-3">
+				<a href="#" class="album-poster">
+					<img src="./old-img/anup-jhalota.jpg" alt="">
+				</a>
+				<h4>Jaam Chalne Laga</h4>
+				<p>Anup-Jhalota - 2021</p>
+			</div>
+			<!--=========== ninth card end ============-->
+
+			
+			<!--=========== ninth card start ============-->
+			<div class="col-md-3">
+				<a href="#" class="album-poster">
+					<img src="./old-img/Geeta_Dutt.jpg" alt="">
+				</a>
+				<h4>Aye Dil Mujhe Bata De</h4>
+				<p>Geeta Dutt - 2021</p>
+			</div>
+			<!--=========== ninth card end ============-->
+
+
+			<!--=========== tenth card start ============-->
+			<div class="col-md-3">
+				<a href="#" class="album-poster">
+					<img src="./old-img/pankaj-udas.jpg" alt="">
+				</a>
+				<h4>Chtti ayi Hai</h4>
+				<p>Pankaj Udhas - 2020</p>
+			</div>
+			<!--=========== tenth card end ============-->
+
+
+			<!--=========== eleventh card start ============-->
+			<div class="col-md-3">
+				<a href="#" class="album-poster">
+					<img src="./old-img/mukesh.jpg" alt="">
+				</a>
+				<h4>Awara Hoon</h4>
+				<p>Mukesh - 2018</p>
+			</div>
+			<!--=========== eleventh card end ============-->
+
+
+			<!--=========== Twelveth card start ============-->
+			<div class="col-md-3">
+				<a href="#" class="album-poster">
+					<img src="./old-img/asha-bhosle.jpg" alt="">
+				</a>
+				<h4>Chura Liya Hai Tumne Jo Dil Ko</h4>
+				<p>Asha-Bhosle - 2019</p>
+			</div>
+			<!--=========== Twelveth card end ============-->
+
+
+			<!--=========== thirteenth card start ============-->
+			<div class="col-md-3">
+				<a href="#" class="album-poster">
+					<img src="./old-img/Lata-Mangeshkar.jpg" alt="">
+				</a>
+				<h4>Lag Jaa Gale</h4>
+				<p>Lata  - 2020</p>
+			</div>
+			<!--=========== thirteenth card end ============-->
+
+
+			<!--=========== fourteenth card start ============-->
+			<div class="col-md-3">
+				<a href="#" class="album-poster">
+					<img src="./old-img/iqbal-bano-1577517240.jpg" alt="">
+				</a>
+				<h4>Daagh-e-dil</h4>
+				<p>Iqbal-Bano - 2021</p>
+			</div>
+			<!--=========== fourteenth card end ============-->
+
+
+			<!--=========== fifteenth card start ============-->
+			<div class="col-md-3">
+				<a href="#" class="album-poster">
+					<img src="./old-img/ahmed rushdi.jpg" alt="">
+				</a>
+				<h4>Tumhain kese bata Doon</h4>
+				<p>Ahmed Rushdi - 2017</p>
+			</div>
+			<!--=========== fifteenth card end ============-->
+		</div>
+
+        <!--====================================== OLD SINGERS CARDS END ================================================-->
+		
+
+		
+
+
+		<div class="row">
+			<div class="col-md-12">
+				<h3>coming soon</h3>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>Lorem ipsum</h4>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/838702/pexels-photo-838702.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>Repellat illo</h4>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/894156/pexels-photo-894156.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>adipisicing elit</h4>
+			</div>
+			
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/2118046/pexels-photo-2118046.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>Atque ab</h4>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/1735240/pexels-photo-1735240.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>Fugiat Silly</h4>
+			</div>
+			<div class="col-md-2">
+				<a href="#" class="album-poster">
+					<img src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+				</a>
+				<h4>veniam expedita</h4>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+	<div id="aplayer"></div>
+
+	<!-- Jquery Link -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<!-- Bootstrap Link -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!-- APlayer Jquery link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>	
+
+	<script>
+
+
+		// NOW I CLICK album-poster TO GET CURRENT SONG ID
+		$(".album-poster").on('click', function(e){
+			var dataSwitchId = $(this).attr('data-switch');
+			//console.log(dataSwitchId);
+
+			// and now i use aplayer switch function see
+			ap.list.switch(dataSwitchId); //this is static id but i use dynamic 
+
+			// aplayer play function
+			// when i click any song to play
+			ap.play();
+
+			// click to slideUp player see
+			$("#aplayer").addClass('showPlayer');
+		});
+
+		const ap = new APlayer({
+		    container: document.getElementById('aplayer'),
+		    listFolded: true,
+		    audio: [
+
+				                                    //====================INDIAN SONGS CARDS START ==========================//
+		    {
+		        name: ' Kali Kali zulfon Ka phande na da',
+		        artist: 'Nusrat Fateh Ali Khan',
+		        url: 'source/Kali Kali zulfon Ka phande na da.mp3',
+		        cover: './old-img/Nusrat_Fateh_Ali_Khan.jpg'
+		    },
+			{
+		        name: 'Main Hosh Mein Tha',  // SONG NAME
+		        artist: 'Mehdi-Hassan', //ARTIST NAME
+		        url: 'source/Main Hosh Mein Tha.mp3', // PATH NAME AND SONG URL
+		        cover: './old-img/mehdi-hassan-3.jpg' // COVER IMAGE
+		    },
+			{
+				name: 'Jo na mil Sake wohi bewafa',
+				artist: 'Noor Jahan',
+				url: 'source/Jo na mil Sake wohi bewafa.mp3',
+				cover: './old-img/Noor-Jahan.jpg',
+			},
+			{
+				name: 'Insha Ji Utho Ab Kooch',
+				artist: 'Amanat Ali Khan',
+				url: 'source/Insha Ji Utho Ab Kooch.mp3',
+				cover: './old-img/Amanat-Ali-Khan.jpg',
+			},
+			{
+				name: 'Koi Fariyaad',
+				artist: 'Jagjit Sign',
+				url: 'source/Koi Fariyaad Lyrical.mp3',
+				cover: './old-img/Jagjit-Singh.jpg',
+			},
+			{
+				name: 'Kaise Kategi Zindagi',
+				artist: 'M.Rafi',
+				url: 'source/Kaise Kategi Zindagi.mp3',
+				cover: './old-img/M.Rafi.jpg',
+			},
+            {
+				name: 'Mere naina sawan bhado',
+				artist: 'Kishore-Kumar',
+				url: 'source/Mere naina sawan bhado.mp3',
+				cover: './old-img/Kishore-Kumar.jpg',
+			},
+			{
+				name: 'Idhar Zindagi Ka',
+				artist: 'Munni Begam',
+				url: 'source/Idar Zingadi ka.mp3',
+				cover: './old-img/munni-begam.jpg',
+			},
+			{
+				name: 'Jaam Chalne Laga',
+				artist: 'Anup-Jhalota',
+				url: 'source/Jaam Chalne Laga.mp3',
+				cover: './old-img/anup-jhalota.jpg',
+			},
+            {
+				name: 'Koi Vi Nahi',
+				artist: 'Kishore-Kumar',
+				url: 'source/Koi Vi Nahi.mp3',
+				cover: './old-img/Kishore-Kumar.jpg',
+			},
+			{
+				name: 'Aye Dil Mujhe Bata De',
+				artist: 'Geeta Dutt',
+				url: 'source/Aye Dil Mujhe Bata De.mp3',
+				cover: './old-img/Geeta_Dutt.jpg',
+			},
+			{
+				name: 'Chtti ayi Hai',
+				artist: 'Pankaj Udhas',
+				url: 'source/Chtti ayi Hai.mp3',
+				cover: './old-img/pankaj-udas.jpg',
+			},
+            {
+				name: 'Awara Hoon',
+				artist:'Mukesh',
+				url: 'source/Awara Hoon.mp3',
+				cover: './old-img/mukesh.jpg',
+			},
+            {
+				name: 'Chura Liya Hai Tumne Jo Dil Ko',
+				artist: 'Asha-Bhosle',
+				url: 'source/Chura Liya Hai Tumne Jo Dil Ko.mp3',
+				cover: './old-img/asha-bhosle.jpg',
+			},
+            {
+				name: 'Lag Jaa Gale',
+				artist: 'Lata',
+				url: 'source/Lag Jaa Gale.mp3',
+				cover: './old-img/Lata-Mangeshkar.jpg',
+			},
+			{
+				name: 'Daagh-e-dil',
+				artist: 'Iqbal-Bano',
+				url: 'source/Daagh-e-dil.mp3',
+				cover: './old-img/iqbal-bano-1577517240.jpg',
+			},
+            {
+				name: 'Tumhain kese bata Doon',
+				artist: 'Ahmed Rushdi',
+				url: 'source/Tumhain kese bata Doon.mp3',
+				cover: './old-img/ahmed rushdi.jpg',
+			},
+  
+
+
+
+                                                     //====================OlD SONGS CARDS END ==========================//
+
+
+
+													 
+
+
+		    ]
+		});
+	</script>
+
+	</body>
+</html>
